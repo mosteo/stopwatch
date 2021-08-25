@@ -1,0 +1,10 @@
+name = "stopwatch"
+description = "Keep track of elapsed time"
+version = "0.1.0"
+tags = ["timer", "stopwatch", "chronometer"]
+
+authors = ["Alejandro R. Mosteo"]
+maintainers = ["Alejandro R. Mosteo <alejandro@mosteo.com>"]
+maintainers-logins = ["mosteo"]
+
+configuration.disabled = true
