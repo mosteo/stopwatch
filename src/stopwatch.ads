@@ -8,10 +8,19 @@ package Stopwatch is
 
    function Elapsed (This : Instance) return Duration;
 
-   procedure Hold (This : in out Instance; Release : Boolean := False);
-   --  Stop counting time, or re-start if Release
+   procedure Hold (This : in out Instance; Enable : Boolean := True);
+   --  Stop counting time, or re-start if not Enable
+
+   procedure Release (This : in out Instance);
+   --  Equivalent to Hold (Enable => False)
 
    function Is_Held (This : Instance) return Boolean;
+
+   function Image (This : Instance; Decimals : Natural := 2) return String;
+   --  Elapsed time in seconds, without leading space, without units
+
+   function Image (Elapsed : Duration; Decimals : Natural := 2) return String;
+   --  Convenience to format durations even without a stopwatch
 
 private
 
