@@ -43,7 +43,7 @@ package body Stopwatch is
    -----------
 
    function Image (This : Instance; Decimals : Natural := 2) return String
-   is (Image (This.Elapsed, Decimals));
+   is (Image (Elapsed (This), Decimals));
 
    -----------
    -- Image --
