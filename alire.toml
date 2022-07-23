@@ -1,6 +1,6 @@
 name = "stopwatch"
 description = "Keep track of elapsed time"
-version = "0.1.0"
+version = "0.1.1-dev"
 tags = ["timer", "stopwatch", "chronometer"]
 
 authors = ["Alejandro R. Mosteo"]

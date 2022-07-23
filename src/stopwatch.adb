@@ -2,6 +2,17 @@ with Ada.Text_IO;
 
 package body Stopwatch is
 
+   ------------------
+   -- With_Elapsed --
+   ------------------
+
+   function With_Elapsed (Period : Duration) return Instance is
+   begin
+      return Instance'(Start   => Clock,
+                       Held    => False,
+                       Elapsed => Period);
+   end With_Elapsed;
+
    -----------
    -- Reset --
    -----------

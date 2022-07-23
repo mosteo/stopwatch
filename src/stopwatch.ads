@@ -4,6 +4,10 @@ package Stopwatch is
 
    type Instance is tagged private;
 
+   function With_Elapsed (Period : Duration) return Instance;
+   --  Create a Timer with some elapsed time already counted in (so like if it
+   --  was started in the past).
+
    procedure Reset (This : in out Instance);
 
    function Elapsed (This : Instance) return Duration;
